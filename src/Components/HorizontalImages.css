@@ -1,0 +1,27 @@
+.images-horizontal-container {
+    text-align: center;
+    gap: 25px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-item {
+    display: inline-block;
+    margin: 10px; /* Adjust the margin as per your preference */
+    max-width: 100%; /* Ensure images don't exceed the container width */
+    height: 50px; /* Maintain aspect ratio */
+
+  }
+  
+  /* Media Query for Mobile Devices */
+  @media only screen and (max-width: 600px) {
+    .images-horizontal-container {
+      text-align: left; /* Align images to the left on smaller screens */
+    }
+  
+    .image-item {
+      display: block; /* Display images as blocks on smaller screens */
+      margin: 10px auto; /* Center images horizontally on smaller screens */
+    }
+  }
+  
